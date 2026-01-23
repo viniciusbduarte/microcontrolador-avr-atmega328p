@@ -1,0 +1,27 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="DcMotor" CircId="DcMotor-6" mainComp="false" Show_id="true" Show_Val="false" Pos="-32,-212" rotation="90" hflip="1" vflip="1" label="DcMotor-6" idLabPos="-22,-48" labelrot="0" valLabPos="-14,36" valLabRot="0" RPM_Nominal="60 _RPM" Volt_Nominal="24 V" Resistance="100 Ω" />
+
+<item itemtype="Battery" CircId="Battery-10" mainComp="false" Show_id="false" Show_Val="false" Pos="12,-268" rotation="0" hflip="1" vflip="1" label="Battery-10" idLabPos="-18,-22" labelrot="0" valLabPos="-10,10" valLabRot="0" Voltage="24 V" Resistance="1 mΩ" />
+
+<item itemtype="BJT" CircId="BJT-11" mainComp="false" Show_id="false" Show_Val="false" Pos="-40,-148" rotation="0" hflip="1" vflip="1" label="BJT-11" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="100" Vcrit="0.670736 V" />
+
+<item itemtype="Probe" CircId="Probe-32" mainComp="false" Show_id="false" Show_Val="true" Pos="-16,-284" rotation="-45" hflip="1" vflip="1" label="Probe-32" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Ground" CircId="Ground-38" mainComp="false" Show_id="false" Show_Val="false" Pos="-32,-104" rotation="0" hflip="1" vflip="1" label="Ground-38" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Ground" CircId="Ground-39" mainComp="false" Show_id="false" Show_Val="false" Pos="48,-248" rotation="0" hflip="1" vflip="1" label="Ground-39" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="MCU" CircId="mega328-40" mainComp="false" Show_id="true" Show_Val="false" Pos="-160,-228" rotation="0" hflip="1" vflip="1" label="mega328-40" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../Documents/Atmel Studio/7.0/capacitacao-embarcados-virtus/motor-dc-transistor/motor-dc-transistor/Debug/motor-dc-transistor.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="DcMotor-6-lPin" endpinid="Battery-10-lPin" pointList="-32,-252,-32,-268,-4,-268" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="DcMotor-6-rPin" endpinid="BJT-11-collector" pointList="-32,-172,-32,-164" />
+
+<item itemtype="Connector" uid="Connector-60" startpinid="BJT-11-emiter" endpinid="Ground-38-Gnd" pointList="-32,-132,-32,-120" />
+
+<item itemtype="Connector" uid="Connector-61" startpinid="Battery-10-rPin" endpinid="Ground-39-Gnd" pointList="28,-268,48,-268,48,-264" />
+
+<item itemtype="Connector" uid="Connector-65" startpinid="mega328-40-PORTB5" endpinid="BJT-11-base" pointList="-120,-148,-56,-148" />
+
+</circuit>
