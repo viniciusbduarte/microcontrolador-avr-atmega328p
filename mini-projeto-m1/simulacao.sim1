@@ -1,0 +1,27 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-124,-40" rotation="0" hflip="1" vflip="1" label="mega328-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../Users/Vinicius Duarte/Documents/Atmel Studio/7.0/capacitacao-embarcados-virtus/mini-projeto-m1/mini-projeto-m1/Debug/mini-projeto-m1.hex" Auto_Load="false" saveEepr="true" Logic_Symbol="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" SerialMon="-1" />
+
+<item itemtype="SR04" CircId="SR04-2" mainComp="false" Show_id="false" Show_Val="false" Pos="-176,-144" rotation="0" hflip="1" vflip="1" label="SR04-2" idLabPos="-16,-48" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-12" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="-316,-180" rotation="0" hflip="1" vflip="1" label="Voltage Source-12" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Running="true" Value_Volt="3.62 V" MaxValue="5 V" MinValue="0 V" />
+
+<item itemtype="Oscope" CircId="Oscope-21" mainComp="false" Show_id="false" Show_Val="false" Pos="72,-60" rotation="0" hflip="1" vflip="1" label="Oscope-21" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="3047718322246" TimPos="4045943848435,4045943848435,4045943848435,4045943848435," VolDiv="1,1,1,1," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,0,0,0," />
+
+<item itemtype="Oscope" CircId="Oscope-22" mainComp="false" Show_id="false" Show_Val="false" Pos="76,-224" rotation="0" hflip="1" vflip="1" label="Oscope-22" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="3000000000000" TimPos="4000000000000,4000000000000,4000000000000,4000000000000," VolDiv="1,1,1,1," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,0,0,0," />
+
+<item itemtype="Oscope" CircId="Oscope-23" mainComp="false" Show_id="false" Show_Val="false" Pos="76,108" rotation="0" hflip="1" vflip="1" label="Oscope-23" idLabPos="-90,-100" labelrot="0" valLabPos="-16,20" valLabRot="0" Basic_X="135 _px" Basic_Y="135 _px" BufferSize="600000" connectGnd="true" InputImped="10 MΩ" TimDiv="3000000000000" TimPos="4040000000000,4040000000000,4040000000000,4040000000000," VolDiv="1.01,1.01,1.01,1.01," Tunnels=",,,," Trigger="4" Filter="0.1 V" AutoSC="4" Tracks="1" HideCh="false,false,false,false," VolPos="0,0,0,0," />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Voltage Source-12-outPin" endpinid="SR04-2-inpin" pointList="-288,-164,-264,-164,-264,-168" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="mega328-1-PORTB0" endpinid="SR04-2-trigpin" pointList="-132,72,-176,72,-176,-96" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="SR04-2-outpin" endpinid="mega328-1-PORTB1" pointList="-168,-96,-168,84,-80,84,-80,72,-84,72" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="mega328-1-PORTC3" endpinid="Oscope-22-Pin2" pointList="-84,-16,-56,-16,-56,-208,-12,-208" />
+
+<item itemtype="Connector" uid="Connector-34" startpinid="mega328-1-PORTC2" endpinid="Oscope-21-Pin0" pointList="-84,-8,-84,-108,-16,-108" />
+
+<item itemtype="Connector" uid="Connector-35" startpinid="mega328-1-PORTC1" endpinid="Oscope-23-Pin0" pointList="-84,0,-40,0,-40,60,-12,60" />
+
+</circuit>
