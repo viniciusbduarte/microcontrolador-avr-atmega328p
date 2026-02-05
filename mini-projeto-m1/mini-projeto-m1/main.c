@@ -31,9 +31,8 @@
 				 classificarCaixa('P');
 			 }
 		}
-
+		mostrarContagem();		
 		ultimaDistancia = distancia;
  
-		 _delay_ms(100);
 	}
  }

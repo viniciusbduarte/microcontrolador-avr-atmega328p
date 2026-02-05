@@ -12,6 +12,7 @@
 void initHardware();
 float readDistance();
 void classificarCaixa(char categoria);
-void setPWM(uint8_t duty);
+void mostrarContagem();
+//void setPWM(uint8_t duty);
 
 #endif /* BSP_H_ */
